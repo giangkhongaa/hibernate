@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.giang.model">
+	<class name="Grade" table="grade">
+		<id name="gradeId" column="grade_id">
+			<generator class="native" />
+		</id>
+		<property name="gradeName" column="gradeName" />
+		<set name="classOfGrade" table="class" lazy="false" fetch="select"
+			inverse="true">
+			<key>
+				<column name="grade_id" not-null="true" />
+			</key>
+			<one-to-many class="com.giang.model.Class" />
+		</set>
+	</class>
+</hibernate-mapping>

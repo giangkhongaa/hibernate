@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.giang.model">
+	<class name="Student" table="student">
+		<id name="studentId" column="student_id">
+			<generator class="native" />
+		</id>
+		<property name="studentName" column="student_name" />
+		<property name="studentCode" column="student_code" />
+		<property name="address" column="address" />
+		<property name="averageScore" column="average_score" />
+		<property name="dayOfBirth" column="date_of_birth" />
+		<property name="sex" column="sex" />
+		<many-to-one name="classStudent" class="com.giang.model.Class"
+			fetch="select">
+			<column name="class_id" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

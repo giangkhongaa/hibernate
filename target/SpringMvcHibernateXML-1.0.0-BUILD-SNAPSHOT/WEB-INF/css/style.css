@@ -1,0 +1,265 @@
+h1 {
+	text-align: center;
+	color: #2020db;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.divTable {
+	display: table;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.divTableRow {
+	display: table-row;
+}
+
+.divTableTitle {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #83f7f7;
+}
+
+.divTableCell {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+	text-align: center;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.backgrounDelete {
+	background-image: url(/WEB-INF/image/delete.jpg);
+}
+
+.text-left {
+	text-align: left;
+}
+/* begin insert */
+.insert-block {
+	width: 280px;
+	padding: 20px;
+	background: #44fcfc;
+	border-radius: 5px;
+	border-top: 5px solid #ff656c;
+	margin: 0 auto;
+}
+
+.insert-block h1 {
+	text-align: center;
+	color: #000;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.insert-block--input {
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-family: Montserrat;
+	padding: 0 20px 0 50px;
+	outline: none;
+}
+
+.insert-block--input:active, .insert-block--input:focus {
+	border: 1px solid #ff656c;
+}
+
+.insert-block--button {
+	width: 100%;
+	height: 40px;
+	background: #49ed49;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #e15960;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: Montserrat;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.insert-block--button:hover {
+	background: #ff7b81;
+}
+
+.add-block--button {
+	width: 200px;
+	height: 40px;
+	background: #0080ff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #e15960;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: Montserrat;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	top: 50px;
+}
+
+.add-block--button:hover {
+	background: blue;
+}
+
+.search-block--input {
+	width: 200px;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-family: Montserrat;
+	padding: 0 20px 0 50px;
+	outline: none;
+	display: block;
+	position: absolute;
+	top: 75px;
+	left: 300px;
+}
+
+.search-block--input:active, .search-block--input:focus {
+	border: 1px solid #ff656c;
+}
+
+.search-block--button {
+	width: 150px;
+	height: 40px;
+	background: #0080ff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #e15960;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: Montserrat;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 75px;
+	left: 520px;
+}
+
+.cancel-block--button {
+	width: 100px;
+	height: 40px;
+	background: #0080ff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #e15960;
+	color: #fff582;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: Montserrat;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 75px;
+	left: 680px;
+}
+
+.search-block--button:hover {
+	background: blue;
+}
+
+.container-page {
+	min-height: 200px;
+	min-width: 100px;
+	position: absolute;
+	top: 500px;
+}
+
+.container-page-record {
+	height: 30px;
+	width: 30px;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid green;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	margin-left: 5px;
+}
+
+.container-page-record a {
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin-top: 2px;
+}
+
+.container-page-record--current {
+	text-decoration: underline;
+	background-color: #7676f7;
+}
+
+.container-page-record:HOVER {
+	background-color: #ffd4aa;
+}
+
+.error {
+	color: red;
+}
+
+.logout {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top:10px;
+	font-size: 40px;
+	text-decoration: none;
+	color: #FFF;
+	background-color: blue;
+	border: 1px solid green;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+.show-last-id{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top:300px;
+	font-size: 15px;
+	color: red;
+}
+.show-last-id2{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top:350px;
+	font-size: 15px;
+	color: red;
+}
